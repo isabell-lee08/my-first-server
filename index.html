@@ -13,6 +13,8 @@
             margin: 0;
             background: black;
             overflow: hidden;
+
+            pointer-events: none;
         }
 
         .container {
@@ -25,6 +27,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        img {
+            max-width: 10em;
         }
 
         .ghost {
@@ -42,12 +48,11 @@
 
         .skeleton {
             position: absolute;
-            bottom: 0em;
+            bottom: 3em;
             left: -10em;
 
             width: 10em;
             height: 10em;
-            background: url(images/skeleton-sneak.gif) center/130%;
 
             animation: walk 10s infinite linear;
         }
@@ -67,11 +72,14 @@
 <body>
     <div class="container">
         <div class="ghost">
-            <img src="images/ghost.gif">
+            <img
+                src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2djb3Z4NnBqNXY4djRzMXBhdzdrZThvd290d2VhaHplYTVoeWxtdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5LJkMSHerk3CxwU4Gg/giphy.gif">
             <h1>happy halloween</h1>
         </div>
     </div>
     <div class="skeleton">
+        <img
+            src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExemF6enBwMzd4YXZmNG1lbHQxc2dwOWdwaGF1bnN6anZ2c3JsaWEwYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4Lqp2O8EHpFMtMXxZx/giphy.gif">
     </div>
 </body>
 
